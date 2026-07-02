@@ -4,84 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGGNI BOT DOĞRULAMA</title>
+    <!-- Google reCAPTCHA API -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+        /* Tüm süslemeleri kaldırıp sade bir yerleşim yapıyoruz */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #1e1e1e;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            border: 1px solid #333;
+            justify-content: space-between;
+            background-color: #ffffff;
+            color: #000000;
         }
         h1 {
-            color: #ff4757;
-            margin-bottom: 10px;
-            font-size: 24px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 28px;
+            margin: 0 0 10px 0;
         }
-        p {
-            color: #a4b0be;
-            margin-bottom: 25px;
-            font-size: 14px;
-        }
-        .captcha-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
+        .captcha-wrapper {
+            margin-top: 20px;
         }
         button {
-            background-color: #2ed573;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 5px;
+            margin-top: 15px;
+            padding: 5px 15px;
             cursor: pointer;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-        button:hover {
-            background-color: #26af5f;
         }
         footer {
-            margin-top: 40px;
-            font-size: 13px;
-            color: #57606f;
+            font-size: 14px;
             font-weight: bold;
-            letter-spacing: 2px;
+            margin-top: auto;
+            padding-top: 40px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <!-- Sol Üst Taraf -->
+    <div>
         <h1>AGGNI BOT DOĞRULAMA</h1>
-        <p>Gruptan uçurulmamak için insan olduğunu kanıtla.</p>
         
         <form action="#" method="POST" onsubmit="alert('Doğrulama başarıyla gönderildi! Kayıtlar inceleniyor...'); return false;">
-            
-            <div class="captcha-container">
-                <div class="g-recaptcha" data-sitekey="6Le6uEEtAAAAAH8HPrOELkRdCTJM_KK6wHGWLmgk" data-theme="dark"></div>
+            <div class="captcha-wrapper">
+                <!-- Temayı da varsayılan açık renge çevirdik -->
+                <div class="g-recaptcha" data-sitekey="6Le6uEEtAAAAAH8HPrOELkRdCTJM_KK6wHGWLmgk"></div>
             </div>
-            
-            <button type="submit">Sisteme Gönder</button>
+            <button type="submit">Doğrula</button>
         </form>
     </div>
 
-    <footer>ŞİMDİ SIÇTIN GÜNEY</footer>
+    <!-- Sol Alt Taraf -->
+    <footer>GÜNEY SIÇTIN</footer>
 
 </body>
 </html>
