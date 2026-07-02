@@ -7,7 +7,6 @@
     <!-- Google reCAPTCHA API -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
-        /* Tüm süslemeleri kaldırıp sade bir yerleşim yapıyoruz */
         html, body {
             height: 100%;
             margin: 0;
@@ -48,7 +47,7 @@
         
         <form action="#" method="POST" onsubmit="alert('Doğrulama başarıyla gönderildi! Kayıtlar inceleniyor...'); return false;">
             <div class="captcha-wrapper">
-                <!-- Temayı da varsayılan açık renge çevirdik -->
+                <!-- İlk verdiğin site anahtarını buraya gömdüm -->
                 <div class="g-recaptcha" data-sitekey="6Le6uEEtAAAAAH8HPrOELkRdCTJM_KK6wHGWLmgk"></div>
             </div>
             <button type="submit">Doğrula</button>
